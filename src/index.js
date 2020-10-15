@@ -17,14 +17,19 @@ import ReactDOM from 'react-dom';
 // New Way, ES2015
 
     const App = () => {
+        // const buttonText="Click Me!";  changed to function
         return (
             <div>
-                <label class="label" for="name">Enter name: </label>
+                <label className="label" for="name">Enter name: </label>
                 <input id="name" type="text" />
-                <button style={{ backgroundColor: "blue", color: "white" }}>Submit</button>
+                <button style={{ backgroundColor: "blue", color: "white" }}>{getButtonText()}</button>
             </div>
         );
     };
+
+function getButtonText() {
+    return 'Click on me!';
+}
 
 //
 
